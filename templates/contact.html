@@ -1,0 +1,302 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>zzzmh's Blog - Design & Programming By zmh</title>
+    
+<link rel="icon" type="image/png" href="image/logo/favicon2.ico">
+<c:if test="true">
+    <link href="../static/css/bootstrap.min_1.css" rel="stylesheet"/>
+    <link href="../static/css/share.min_1.css" rel="stylesheet"/>
+</c:if>
+<c:if test="false">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/share.min.css" rel="stylesheet">
+</c:if>
+<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/owl.carousel_1.css">
+<link rel="stylesheet" href="../static/css/magnific-popup_1.css">
+<link rel="stylesheet" href="../static/css/flexslider_1.css">
+<link rel="stylesheet" href="../static/css/style_1.css">
+<link rel="stylesheet" href="../static/css/green_1.css">
+<link rel="stylesheet" href="../static/css/loading_1.css">
+<link rel="stylesheet" href="../static/css/prettifycode_1.css">
+<script type="text/javascript" src="../static/js/baidu.js"></script>
+</head>
+<body class="home">
+<script src="../static/js/loading.js"></script>
+<header class="row transparent white" data-offset-top="300" id="header">
+    <div class="container">
+        <div class="row top-header">
+            <div class="col-sm-4 search-form-col">
+                <a class="search-form" style="cursor:pointer;" href="contact">
+                    <div class="input-group">
+                        <span class="input-group-addon"><img src="../static/picture/mail-icon-dark.png" alt=""></span>
+                        <span class="form-control">留言</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 logo-col text-center">
+                <a href="/"><img src="../static/picture/1.png" width="200"></a>
+            </div>
+            <div class="col-sm-4 menu-trigger-col">
+                <button class="menu-trigger black pull-right">
+                    <span class="active-page">菜单</span>
+                    <img src="../static/picture/menu-align-dark.png" alt="" class="icon-burger">
+                    <img src="../static/picture/menu-close-dark.png" alt="" class="icon-cross">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 menu-col">
+                    <div class="row">
+                        <ul class="nav column-menu white-bg">
+                            <li><a href="/">首页</a></li>
+                            <li><a href="about">关于我</a></li>
+                        </ul>
+                        <ul class="nav column-menu white-bg">
+                            <li><a href="http://bz.zzzmh.cn" target="_blank">极简壁纸</a></li>
+                            <li><a href="http://chrome.zzzmh.cn" target="_blank">极简插件</a></li>
+                        </ul>
+                        <ul class="nav column-menu white-bg">
+                            <li><a href="https://github.com/18121259693" target="_blank">GITHUB</a></li>
+                            <li><a href="https://leanote.zzzmh.cn/" target="_blank">技术笔记</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="row page-content-wrap">
+    <div class="container">
+        <h2 class="page-title text-center">留言信箱</h2>
+        <div class="row">
+            <div class="col-md-10 page-contents">
+                <div class="row page-content">
+                    <div class="contents">
+                        <h4 style="text-align: center;">有什么想对我说的，任何内容都可以在这里留言，留言内容只有我能看到，我会定期查看</h4>
+                        <img src="../static/picture/contact.jpg" alt="" style="margin: 20px 0px;width: 100%">
+                        <div class="contact-form row">
+                            <div class="form-group col-sm-12">
+                                <label for="name">你的名字 （必填项）</label>
+                                <input type="text" id="name" class="form-control" placeholder="兄台如何称呼?" required>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="email">联系方式 （可选项）</label>
+                                <input type="email" id="email" class="form-control" placeholder="若需要回复，可以留下联系方式，例如邮箱"
+                                       required>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="message">留言内容 （必填项）</label>
+                                <textarea name="message" id="message" class="form-control" maxlength="1000"
+                                          placeholder="留言的内容写在这里，请畅所欲言"></textarea>
+                            </div>
+                            <div class="col-sm-12">
+                                <button id="sendContact" class="btn-primary"><span>发送留言</span></button>
+                                <!-- <h5 class="pull-right">*required fields</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 sidebar visible-sm visible-md visible-lg">
+                <!--Author Widget-->
+                <aside class="row m0 widget-author widget">
+                    <div class="widget-author-inner row">
+                        <div class="author-avatar row">
+                            <a href="/about" target="_blank">
+                                <img src="../static/picture/author.jpg" alt="" class="img-circle" width="108px">
+                            </a>
+                        </div>
+                        <a href="/about" target="_blank"><h5 class="author-name">站长小哥</h5></a>
+                        <h5 class="author-title">Java 程序猿</h5>
+                        <p>一个爱编程的佛系程序员小哥。日常更新一些学习笔记。</p>
+                        <a href="/contact" class="know-more" target="_blank">悄悄话</a>
+                    </div>
+                </aside>
+                <aside class="row m0 widget-author widget collections">
+                    <div class="widget-author-inner row">
+                        <h5 class="author-name">线上作品</h5>
+                        <a href="https://zzzmh.cn" target="_blank">
+                            <img src="../static/picture/blog.jpg" width="100%" alt="个人博客" title="个人博客">
+                        </a>
+                        <a href="https://bz.zzzmh.cn" target="_blank">
+                            <img src="../static/picture/bz.jpg" width="100%" alt="极简壁纸" title="极简壁纸">
+                        </a>
+                        <a href="https://chrome.zzzmh.cn" target="_blank">
+                            <img src="../static/picture/chrome.jpg" width="100%" alt="极简插件" title="极简插件">
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 留言板功能 通过JS调用 $('#myModal').modal('show') -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalAlert">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <p class="modal-title">小提示</p>
+            </div>
+            <div class="modal-body">
+                <h4 id="mMain"></h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<footer class="row" id="footer">
+    <div class="container">
+        <div class="row top-footer">
+            <!-- logo -->
+            <div class="widget col-md-4 col-sm-4 widget-about">
+                <div class="row m0"><a href="/"><img src="../static/picture/21.png" alt=""></a></div>
+                <div style="margin: 10px 15px" id="firend">
+                    友情链接:
+                    <a href="http://csyd.xyz" target="_blank" style="white-space:nowrap;">csyd 个人博客</a>
+                    <a href="https://chungzh.cn" target="_blank" style="white-space:nowrap;">ChungZH</a>&nbsp;
+                    <a href="http://qhjack.cn" target="_blank" style="white-space:nowrap;">起航天空</a>&nbsp;
+                    <a href="https://blog.yiranzai.cn" target="_blank" style="white-space:nowrap;">yiranzai</a>&nbsp;
+                    <a href="https://alili.tech" target="_blank" style="white-space:nowrap;">前端大爆炸</a>&nbsp;&nbsp;
+					<a href="https://www.jiangweishan.com" target="_blank" style="white-space:nowrap;">Web前端之家</a>&nbsp;
+					<a href="https://www.wulintang.cn" target="_blank" style="white-space:nowrap;">伍林堂工作室</a>&nbsp;
+					<a href="http://www.mybj123.com" target="_blank" style="white-space:nowrap;">前端博客</a>&nbsp;
+					<br>
+                    <a href="https://www.upyun.com" target="_blank" style="margin:0px 8px"><img
+                            src="../static/picture/ypy.png" width="60px"></a>
+                    <a href="https://myssl.com/zzzmh.cn?from=mysslid" target="_blank" style="margin:0px 8px"><img
+                            src="../static/picture/myssl-id3-logo-1.png" alt="" width="45px"></a>
+                </div>
+                <div class="row">
+                    <h5 class="copyright" style="margin: 5px 30px;color: #666;">沪ICP备18011999号</h5>
+                </div>
+            </div>
+            <!-- 联系方式 -->
+            <div class="widget col-md-4 col-sm-4 widget-menu">
+                <div class="row">
+                    <p>线上作品:</p>
+                    <p style="padding-left: 40px">
+                        <a href="https://bz.zzzmh.cn" target="_blank">
+                            <img src="../static/picture/bz.jpg" width="35%">
+                        </a>
+                        <a href="https://chrome.zzzmh.cn" target="_blank">
+                            <img src="../static/picture/chrome.jpg" width="35%">
+                        </a>
+                    </p>
+                    <p>联系方式</p>
+                    <ul class="contacts">
+                        <li class="fa fa-github"><a href="https://github.com/18121259693" target="_blank">github.com/18121259693</a>
+                        </li>
+                        <li class="fa fa-pencil-square-o"><a href="https://www.jianshu.com/u/0ffc2d2e2da1" target="_blank">jianshu.com/u/0ffc2d2e2da1</a>
+                        </li>
+                        <li class="fa fa-envelope-o"><a href="mailto:admin@zzzmh.cn">admin@zzzmh.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 二维码 -->
+            <div class="widget col-md-4 col-sm-4 widget-subscribe">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: center;">
+                    <img src="../static/picture/wechat.jpg" width="130" height="130" style=""/>
+                    <p style="text-align: center;">个人微信</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: center;">
+                    <img src="../static/picture/wechatmp.jpg" width="130" height="130" style=""/>
+                    <p style="text-align: center;">公众微信</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<c:if test="true">
+    <script src="../static/js/jquery-2.2.0.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/social-share.min.js"></script>
+</c:if>
+<c:if test="false">
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/social-share.min.js"></script>
+</c:if>
+<script src="../static/js/app.js"></script>
+<script type="text/javascript">loadContact();</script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/imagesloaded.pkgd.min.js"></script>
+<script src="../static/js/isotope.pkgd.min.js"></script>
+<script src="../static/js/jquery.flexslider-min.js"></script>
+<script src="../static/js/prettify.js"></script>
+<script src="../static/js/theme.js"></script>
+<script src="../static/js/l2dwidget.min.js"></script>
+<script type="text/javascript">
+    var config = {
+        model: {
+            jsonPath: 'https://cdn1.zzzmh.cn/live2DModel/hijiki/assets/hijiki.model.json',
+        },
+        display: {
+            superSample: 1,
+            width: 245,
+            height: 245,
+            position: 'right',
+            hOffset: 0,
+            vOffset: 0,
+        },
+        mobile: {
+            show: false,
+            scale: 1,
+            motion: false,
+        },
+        react: {
+            opacityDefault: 1,
+            opacityOnHover: 0.75
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#sendContact').on('click', function () {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (!name || name.length <= 0) {
+                mAlert('请输入名字或者昵称');
+            } else if (!message || message.length <= 0) {
+                mAlert('请输入留言的具体内容');
+            } else {
+                if (!email) email = "";
+                $.post("../service/blog/blogContact", {
+                    name: name,
+                    contact: email,
+                    message: message
+                }, function (result) {
+                    if (result == 0) {
+                        mAlert("留言成功");
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#message').val('');
+                    }
+                });
+            }
+
+        });
+        L2Dwidget.init(config);
+    })
+</script>
+</body>
+</html>
